@@ -28,7 +28,15 @@ height: 18vmin;
 width: 18vmin;
 border: none;
 border-radius: 20px;
+box-shadow: 0 0 1rem rgba(19, 46, 253, 0.3);
+font-size: 8vmin;
+color: #141ac6;
 }
-.box:hover{
-  
+.reset{
+  height: 8vmin;
+  width: 36vmin;border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 1rem rgba(19, 46, 253, 0.3);
+  font-size: 3vmin;
+  color: #145ec6;
 }
