@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  
 }
 
 body{
@@ -30,7 +31,8 @@ border: none;
 border-radius: 20px;
 box-shadow: 0 0 1rem rgba(19, 46, 253, 0.3);
 font-size: 8vmin;
-color: #141ac6;
+color: #344575;
+background-color: hsla(205, 100%, 96%, 0.792);
 }
 .reset{
   height: 8vmin;
@@ -38,5 +40,5 @@ color: #141ac6;
   border-radius: 20px;
   box-shadow: 0 0 1rem rgba(19, 46, 253, 0.3);
   font-size: 3vmin;
-  color: #145ec6;
+  color: #486ea3;
 }
