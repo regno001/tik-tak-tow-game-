@@ -8,7 +8,9 @@ body{
   background-color: #a3f2f3;
   text-align: center;
 }
-
+h1{
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 .container{
  height: 70vh;
  display: flex;
@@ -41,4 +43,21 @@ background-color: hsla(205, 100%, 96%, 0.792);
   box-shadow: 0 0 1rem rgba(19, 46, 253, 0.3);
   font-size: 3vmin;
   color: #486ea3;
+}
+#newBtn{
+  height: 8vmin;
+  width: 36vmin;border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 1rem rgba(19, 46, 253, 0.3);
+  font-size: 3vmin;
+  color: #486ea3;
+}
+.msg-Container{
+  font-family: system-ui;
+  font-size: 13vmin;
+  
+}
+
+.hide{
+  display: none;
 }
