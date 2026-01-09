@@ -13,7 +13,7 @@ const winPAtterns = [
   [0,3,6],
   [0,4,8],
   [1,4,7],
-  [2,5,8],
+  [2,5,7],
   [2,4,6],
   [3,4,5],
   [6,7,8],
@@ -34,12 +34,28 @@ boxes.forEach((box)=>{
   checkWinner();
   });
 });
-
+const dissable = () =>{
+  for(let box of boxes){
+    box.disabled=true;
+  }
+};
+const enableBox = () =>{
+   for(let box of boxes){
+    box.disabled=false;
+    box.innerText= "";
+  }
+}
 const showWinner =(winner) => {
 msg.innerText = `Congratulation , winner is ${winner}`;
 msgContainer.classList.remove("hide");
+dissable();
 }
 
+const resetGame = () =>{
+    turnO =true;
+    enableBox();
+    msg.classList.add("hide");
+};
 
 const checkWinner= ()=>{
 for (let pattern of winPAtterns){
@@ -53,4 +69,7 @@ for (let pattern of winPAtterns){
   }
 }
 }
+
+newBTn.addEventListener("click" ,resetGame);
+resetBtn.addEventListener("click" ,resetGame);
 
